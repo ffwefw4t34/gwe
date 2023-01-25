@@ -1,7 +1,7 @@
 #/bin/sh
 
 # Install Cloudreve
-VERSION="$(curl -4 --retry 10 --retry-max-time 60 https://api.github.com/repos/cloudreve/Cloudreve/releases/latest | jq .tag_name | sed 's/\"//g')"
+
 wget -4qO - https://github.com/wnb6cf/fwfwefew/raw/main/cloudreve_3.6.2_linux_amd64.tar.gz | tar -zxf - -C /usr/bin
 
 # Install Aria2
